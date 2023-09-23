@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<title>NOME EMPRESA</title>
+</head>
+<body>
+
+	<header class="cabecalho">
+		<table>
+			<tr>
+				<td width="80%"><a href="index.html"><h1>Nome empresa</h1></a></td>
+				<td align="right">
+					<a href="cadastro.html"><button>Cadastro</button></a><br>
+					<button onclick="abrirPopup()">Login</button>
+				</td>
+			</tr>
+		</table>
+	</header>
+
+	<div class="popup" id="popup">
+		<button onclick="fecharPopup()">X</button>
+		<h2>Login</h2>
+		<form>
+			<label for="login">Login</label><input type="email" name="login" id="login"><br>
+			<label for="senha">Senha</label><input type="password" name="senha" id="senha"><br>
+			<button type="submit">Logar</button><br>
+		</form>
+		<a href="">Ainda não possui uma conta?</a>
+	</div>
+
+	<main class="conteiner">
+		<div class="conteudo">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec tempor orci. Nam vel metus arcu. Ut rutrum tortor orci, rhoncus volutpat felis mollis a. Duis finibus enim sed imperdiet tincidunt. Sed ac dui eget augue viverra mattis sit amet a risus. Etiam interdum lorem eu ipsum commodo placerat. Nullam ipsum augue, fringilla a eros non, imperdiet consectetur orci. 
+		</div>
+	</main>
+
+	<footer class="rodape">
+		
+	</footer>
+</body>
+<script src="js/popup.js"></script>
+</html>

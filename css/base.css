@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+}
+
+.cabecalho{
+	background: lightgray;
+	height: 10vh;
+}
+.cabecalho table{
+	width: 100%;
+}
+
+.conteiner{
+	width: 100%;
+	height: 80vh;
+	background: #3c5077;
+	display: flex;
+	justify-content: center;
+}
+.conteiner div{
+	width: 80%;
+	text-align: center;
+}
+
+.rodape{
+	background: lightgray;
+	height: 10vh;
+}
