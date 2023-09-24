@@ -10,10 +10,24 @@
 	text-align: center;
 	visibility: hidden;
 	transition: transform 0.4s, top 0.4s;
+	color: white;
 }
 
 .abrir-popup{
 	visibility: visible;
 	top: 50%;
 	transform: translate(-50%,-50%) scale(1);
+	z-index: 1;
+	background: #1a1a1a;
+}
+
+.popup a{
+	border-bottom: 0px;
+	color: white;
+}
+
+#erro{
+	color: red;
+	font-weight: bold;
+	font-size: 22px;
 }

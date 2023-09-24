@@ -4,33 +4,49 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<title>Cadastro - NOME EMPRESA</title>
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<title>Cadastro - UNI-GUARD</title>
 </head>
 <body>
 
 	<header class="cabecalho">
 		<table>
 			<tr>
-				<td width="80%"><a href="index.html"><h1>Nome empresa</h1></a></td>
+				<td><a href="index.html" class="nome">UNI-GUARD</a></td>
 			</tr>
 		</table>
 	</header>
 
-	<main class="conteiner">
+	<main class="conteiner2">
 		<div class="conteudo">
-			<h2 align="center">Novo Cadastro</h2>
+			<h2 align="center" class="ncadastro" class="ctitulo">Novo Cadastro</h2>
 			<br>
-			<form id="form">
-				<label for="nome">Nome:</label><input type="text" name="nome" id="nome"><br>
-				<label for="nome">Sobrenome:</label><input type="text" name="nome" id="sobrenome"><br>
-				<label for="nome">E-mail:</label><input type="email" name="nome" id="email"><br>
-				<label for="nome">Senha</label><input type="password" name="nome" id="senha"><br>
-				<button type="submit">Enviar</button>
+			<form id="form" class="fcadastro">
+				<label for="nome" class="cnome">Nome:</label><input type="text" name="nome" id="nome" class="cinput"><br>
+				<label for="sobrenome" class="csobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome" class="cinput"><br>
+				<label for="endereco" class="cendereco">Endereço</label><input type="text" name="endereco" id="endereco" class="cinput"><br>
+				<label for="email" class="cemail">E-mail:</label><input type="email" name="nome" id="email" class="cinput"><br>
+				<label for="senha" class="csenha">Senha:</label><input type="password" name="nome" id="senha" class="cinput"><br>
+				<button type="submit" class="cenviar">Enviar</button>
 			</form>
 
-			<a href="login.html"><p>Já possui uma conta?</p></a>
+		</div>
+
+		<div class="conteudo" class="conteudo2">
+			<h2 align="center" class="nlogin" class="ctitulo">Login</h2>
+			<br>
+			<form id="form" class="fcadastro">
+				<label for="email" class="cemail">E-mail:</label><input type="email" name="nome" id="email2" class="cinput"><br>
+				<label for="senha" class="csenha">Senha:</label><input type="password" name="nome" id="senha2" class="cinput"><br>
+				<button type="submit" class="cenviar">Enviar</button>
+			</form>
+
 		</div>
 	</main>
+
+
 
 	<footer class="rodape">
 		
