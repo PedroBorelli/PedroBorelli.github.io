@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<title>UNI-GUARD</title>
 </head>
+
 <body>
 	<header class="cabecalho">
 		<table>
@@ -26,29 +28,41 @@
 	</header>
 
 	<div class="popup" id="popup">
-		<button onclick="fecharPopup()">X</button>
+		<button onclick="fecharPopup()" id="bfechar">X</button>
 		<h2>Login</h2>
 		<form id="form">
 			<p id="erro"></p>
-			<label for="login">E-mail: </label><input type="email" name="login" id="email"><br>
-			<label for="senha">Senha: </label><input type="password" name="senha" id="senha"><br>
-			<button type="submit">Logar</button><br>
+			<label for="login">E-mail: </label><input type="email" name="login" id="email"><br><br>
+			<label for="senha">Senha: </label><input type="password" name="senha" id="senha"><br><br>
+			<button type="submit" id="bentrar">Logar</button><br><br>
 		</form>
-		<a href="cadastro.html">Ainda não possui uma conta?</a>
+		<a href="cadastro.html" class="lconta">Ainda não possui uma conta?</a>
 	</div>
 
 	<main class="conteiner">
-		<a href="Produtos.html">produtos</a>
+		<div>
+			<a href="Produtos.html">produtos</a>
+		</div>
 	</main>
 
 	<footer class="rodape">
-		Codido ralizado por<br>
-		► Pedro Almeida - 2104398<br>
-		► Gabriel Albino - 2106550<br>
-		► Vinicius Soares - 2103902 <br>
+		<tabe border="2" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					Codido ralizado por<br>
+					► Pedro Almeida - 2104398<br>
+					► Gabriel Albino - 2106550<br>
+					► Vinicius Soares - 2103902<br>
+					► Guilherme Santos - 2106081<br>
+				</td>
+			</tr>
+		</tabe>
 	</footer>
 </body>
+<!-- Script para validação da sessçao de  -->
+<script type="module" src="./js/sessao.js"></script>
 <script type="module" src="./js/base.js"></script>
 <script src="js/popup.js"></script>
 <script type="module" src="js/login.js"></script>
+
 </html>

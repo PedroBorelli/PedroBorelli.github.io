@@ -57,10 +57,6 @@
     margin-left: 5px;
 }
 
-td{
-    padding: 0px 0px 0px 0px;
-}
-
 #nome, #sobrenome, #email, #senha, #endereco ,#email2, #senha2{
     background-color: transparent;
     border: 0;
@@ -75,4 +71,7 @@ td{
     border: 1px solid black;
     border-radius: 10%;
     padding: 10px;
+}
+td{
+    padding: 0px 0px 0px 0px;
 }

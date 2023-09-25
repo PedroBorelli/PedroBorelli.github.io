@@ -22,8 +22,27 @@
 }
 
 .popup a{
-	border-bottom: 0px;
+	text-decoration: none; /* Remove a sublinhado (ou outra formatação de texto de link) */
+  	border: none; /* Remove a borda */
 	color: white;
+}
+
+#bfechar {
+    height: 28px;
+    width: 30px;
+    background-color: #1a1a1a;
+    float: right;
+	font-size: 19px;
+	border: 0px;
+	color: white;
+}
+
+#bentrar{
+	float: center;
+	border: 0px;
+	color: white;
+	font-size: 19px;
+	background-color: #1a1a1a;
 }
 
 #erro{

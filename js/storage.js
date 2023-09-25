@@ -32,11 +32,17 @@ function ExisteStorage(storage,item){
 }
 
 function CriarLocalStorage(storage){
-    if(!ExisteStorage(storage,"AdmNome")){
-        storage.setItem("AdmNome","Admin");
-        storage.setItem("AdmSobrenome","Site");
-        storage.setItem("AdmEmail","adm@adm.com");
-        storage.setItem("AdmSenha","4dm!n_L0c@l");
+    let obj;
+    if(!ExisteStorage(storage,"Adm")){
+        obj = {
+            "Nome": "Admin",
+            "Sobrenome": "Site",
+            "Endereco": "Sem endereço",
+            "Email": "adm@adm.com",
+            "Senha": "Senha_Adm"
+        }
+        storage.setItem("Adm",JSON.stringify(obj));
+        storage.setItem("ListaClientes",'{"Clientes":[]}');
     }
 }
 
