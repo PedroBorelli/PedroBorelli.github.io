@@ -4,7 +4,7 @@ html{
 
 body{
 	margin: 0;
-	background-color: black;
+	background-color: white;
 	color: black;
 }
 
@@ -16,10 +16,10 @@ h2{
 	text-align: center;
 }
 
+
 .cabecalho{
 	height: 10vh;
-	background: black;
-	opacity: 0.9;
+	background: #DFF1F5;
 }
 
 .cabecalho table{
@@ -36,7 +36,7 @@ h2{
 	font-size: 45px;
 	font-weight: bold;
 	padding: 0px  0px  0px 15px;
-	color:white;
+	color:#000080;
 	text-decoration: none;
 }
 
@@ -47,7 +47,12 @@ h2{
 	border-radius: 10%;
 	text-align: center;
 	background-color: white;
-	border: 2px solid #F49237;
+	border: 2px solid #000080;
+	cursor: pointer; /* Altera o cursor para uma mão apontando */
+}
+
+.blogin:hover {
+    background-color: #E0E0E0; /* Altera a cor de fundo quando o mouse passa sobre o elemento */
 }
 
 .bcastastro{
@@ -57,51 +62,36 @@ h2{
 	border-radius: 10%;
 	text-align: center;
 	background-color: white;
-	border: 2px solid #F49237;
+	border: 2px solid #000080;
+	cursor: pointer; /* Altera o cursor para uma mão apontando */
+}
+
+.bcastastro:hover {
+    background-color: #E0E0E0; /* Altera a cor de fundo quando o mouse passa sobre o elemento */
 }
 
 .conteiner{
 	width: 100%;
-	height: 80vh;
-	background:#F49237;
+	background:white;
 	display: flex;
 	justify-content: center;
 }
 
-.conteiner table{
-	width: 80%;
-	height: 80%;
-}
-
-.conteiner td{
-	width: 25%;
-}
-
-.plano{
-	width: 80%;
-	text-align: left;
-	font-size: 25px;
-	color: yellow;
-	vertical-align: top;
-}
-
 .rodape{
 	height: 15vh;
-	background: #F49237;
+	background: white;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape img{
+	height: 50px;
+	width: 50px;
 }
 
 .hide{
 	visibility: hidden;
-}
-
-.compra{
-	height: 40px;
-	width: 150px;
-	border: 0px solid;
-	background-color: #F49237;
-	font-size: 24px;
-	font-weight: bold;
-	color: white;
 }
 
 #user{

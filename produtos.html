@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/produtos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Produdos UNI-GUARD</title>
+</head>
+
+<body>
+	<header class="cabecalho">
+		<table>
+			<tr>
+				<td><a href="index.html" class="nome">UNI-GUARD</a></td>
+				<td align="right">
+					<a href="cadastro.html"><button class="bcastastro" id="bcadastro">Cadastro</button></a>
+					<button onclick="abrirPopup()" class="blogin" id="blogin">Login</button>
+				</td>
+				<td>
+					<div id="user" class="hide" onclick="Sair()"></div>
+				</td>
+			</tr>
+		</table>
+	</header>
+
+	<div class="popup" id="popup">
+		<button onclick="fecharPopup()" id="bfechar">X</button>
+		<h2>Login</h2>
+		<form id="form">
+			<p id="erro"></p>
+			<label for="login">E-mail: </label><input type="email" name="login" id="email"><br><br>
+			<label for="senha">Senha: </label><input type="password" name="senha" id="senha"><br><br>
+			<button type="submit" id="bentrar">Logar</button><br><br>
+		</form>
+		<a href="cadastro.html" class="lconta">Ainda não possui uma conta?</a>
+	</div>
+
+	<main class="conteiner">
+		<table border="2" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="plano">
+					Plano Gratis<br><br>
+					Aquela força nos primeiros passos do seu negócio!
+				</td>
+				<td class="plano">
+					Plano inicial<br><br>
+					Recursos essenciais de gestão para lojas em crescimento
+				</td>
+				<td class="plano">
+					Plano Avançado<br><br>
+					Recursos avançados para expandir seu negócio.
+				</td>
+				<td class="plano">
+					Plano Supremo<br><br>
+					Descomplique a emissão de notas fiscais
+				</td>
+			</tr>
+			<tr>
+				<td class="plano">
+					R$ 0/mês<br>
+					<button class="compra">Clique aqui</button>
+				</td>
+				<td class="plano">
+					R$ 59/mês<br>
+					<button class="compra">Clique aqui</button>
+				</td>
+				<td class="plano">
+					R$ 89/mês<br>
+					<button class="compra">Clique aqui</button>
+				</td>
+				<td class="plano">
+					R$ 139/mês<br>
+					<button class="compra">Clique aqui</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="plano">
+					Controle de Vendas<br>
+					1 Usuários<br>
+					Cadastro de Produtos<br>
+					Suporte por E-mail<br>
+				</td>
+				<td class="plano">
+					+ Recursos do Plano Grátis<br>
+					Controle de Caixa<br>
+					Usuários Ilimitados<br>
+					Etiquetas<br>
+					Recibo Digital PDF<br>
+					Pedido Online<br>
+					Estatísticas<br>
+					Múltiplos Endereços<br>
+				</td>
+				<td class="plano">
+					+ Recursos dos Planos Grátis e inicial<br>
+					Sistema de Fidelidade<br>
+					Vendedores e Comissão<br>
+					Estoque via XML<br>
+					Uso em Rede<br>
+					Controle de Pedidos<br>
+				</td>
+				<td class="plano">
+					+ Recursos dos Planos Grátis, inicial e avançados<br>
+					NF-e<br>
+					NFC-e<br>
+					SAT CF-e<br>
+					Suporte Fiscal<br>
+				</td>
+			</tr>
+		</table>
+	</main>
+
+	<footer class="rodape">
+		Codido ralizado por<br>
+		► Pedro Almeida - 2104398<br>
+		► Gabriel Albino - 2106550<br>
+		► Vinicius Soares - 2103902<br>
+		► Guilherme Santos - 2106081<br>
+	</footer>
+</body>
+
+<!-- Script para validação da sessao de login -->
+<script type="module" src="./js/sessao.js"></script>
+<!-- Script para validação da sessao de login -->
+
+<script type="module" src="./js/base.js"></script>
+<script src="js/popup.js"></script>
+<script type="module" src="js/login.js"></script>
+
+</html>

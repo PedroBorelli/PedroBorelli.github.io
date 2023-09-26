@@ -1,51 +1,63 @@
-.popup{
+.popup {
 	width: 360px;
 	background: gray;
 	border-radius: 6px;
 	position: absolute;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%,-50%) scale(0.1);
+	transform: translate(-50%, -50%) scale(0.1);
 	padding: 0 30px 30px;
 	text-align: center;
 	visibility: hidden;
 	transition: transform 0.4s, top 0.4s;
-	color: white;
+	color: black;
 }
 
-.abrir-popup{
+.abrir-popup {
 	visibility: visible;
 	top: 50%;
-	transform: translate(-50%,-50%) scale(1);
-	z-index: 1;
-	background: #1a1a1a;
+	transform: translate(-50%, -50%) scale(1);
+	background: #e6e6e6;
 }
 
-.popup a{
-	text-decoration: none; /* Remove a sublinhado (ou outra formatação de texto de link) */
-  	border: none; /* Remove a borda */
-	color: white;
+.popup a {
+	text-decoration: none;
+	border: none;
+	color: black;
+}
+
+.popup a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
 }
 
 #bfechar {
-    height: 28px;
-    width: 30px;
-    background-color: #1a1a1a;
-    float: right;
+	height: 28px;
+	width: 30px;
+	background-color: #e6e6e6;
+	float: right;
 	font-size: 19px;
 	border: 0px;
-	color: white;
+	color: black;
+	/* Altera o cursor para uma mão apontando */
+	cursor: pointer;
 }
 
-#bentrar{
+#bentrar {
 	float: center;
 	border: 0px;
-	color: white;
+	color: black;
 	font-size: 19px;
-	background-color: #1a1a1a;
+	background-color: #e6e6e6;
+	cursor: pointer;
 }
 
-#erro{
+#bentrar:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+#erro {
 	color: red;
 	font-weight: bold;
 	font-size: 22px;
