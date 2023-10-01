@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 	<title>Cadastro - UNI-GUARD</title>
@@ -23,10 +24,10 @@
 		<div class="conteudo">
 			<h2 align="center" class="ncadastro" class="ctitulo">Novo Cadastro</h2>
 			<br>
-			<form id="form" class="fcadastro">
+			<form id="form" class="fcadastro" height="100%">
 				<label for="nome" class="cnome">Nome:</label><input type="text" name="nome" id="nome" class="cinput"><br>
 				<label for="sobrenome" class="csobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome" class="cinput"><br>
-				<label for="endereco" class="cendereco">Endereço</label><input type="text" name="endereco" id="endereco" class="cinput"><br>
+				<label for="endereco" class="cendereco">Endereço:</label><input type="text" name="endereco" id="endereco" class="cinput"><br>
 				<label for="email" class="cemail">E-mail:</label><input type="email" name="nome" id="email" class="cinput"><br>
 				<label for="senha" class="csenha">Senha:</label><input type="password" name="nome" id="senha" class="cinput"><br>
 				<button type="submit" class="cenviar">Enviar</button>
@@ -37,7 +38,7 @@
 			<h2 align="center" class="nlogin" class="ctitulo">Login</h2>
 			<br>
 			<form id="form" class="fcadastro">
-				<label for="email" class="cemail">E-mail:</label><input type="email" name="nome" id="email2" class="cinput"><br>
+				<label for="email" class="cemail">E-mail:</label><input type="email" name="nome" id="email2" class="cinput" ><br>
 				<label for="senha" class="csenha">Senha:</label><input type="password" name="nome" id="senha2" class="cinput"><br>
 				<button type="submit" class="cenviar">Enviar</button>
 			</form>
@@ -45,10 +46,52 @@
 		</div>
 	</main>
 
-
-
-	<footer class="rodape">
-		
+    <footer class="rodape">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					Codido ralizado por<br>
+					► Pedro Almeida - 2104398<br>
+					► Gabriel Albino - 2106550<br>
+					► Vinicius Soares - 2103902<br>
+					► Guilherme Santos - 2106081<br>
+				</td>
+				<td>
+					<center>
+						<img src="./Image/Mastercard.jpg" class="pagamento">
+						<img src="./Image/Visa.png" class="pagamento">
+						<img src="./Image/Elo.png" class="pagamento">
+						<img src="./Image/Paypal.png" class="pagamento">
+						<img src="./Image/PIX.png" class="pagamento">
+						<img src="./Image/codigo-de-barras.png" class="pagamento">
+					</center>
+				</td>
+				<td>
+					<center>
+						<img src="./Image/suporte-online.png">
+					</center>
+				</td>
+				<td>
+					SAC<br>
+					4038-0000<br>
+					(capitais e regiões metropolitanas)<br>
+					0800-037-5479<br>
+					(outros locais - apenas telefone fixo)
+				</td>
+				<td>
+					<center>
+						Redes Sociais:<br>
+						<a href="index.html"><img src="/Image/Facebook.png" class="redesocial"></a>
+						<a href="index.html"><img src="/Image/instagram.png" class="redesocial"></a>
+						<a href="index.html"><img src="/Image/linkedin.png" class="redesocial"></a>
+						<a href="index.html"><img src="/Image/twitter.png" class="redesocial"></a>
+					</center>
+				</td>
+				<td>
+					<center><a href="index.html"><img src="./Image/whatsapp.png"></a></center>
+				</td>
+			</tr>
+		</table>
 	</footer>
 </body>
 <script type="module" src="./js/cadastro.js"></script>

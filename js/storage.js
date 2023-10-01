@@ -43,6 +43,39 @@ function CriarLocalStorage(storage){
         }
         storage.setItem("Adm",JSON.stringify(obj));
         storage.setItem("ListaClientes",'{"Clientes":[]}');
+        obj = {
+			"Prods":[
+				{
+					"Plano": "Plano Grátis",
+					"DesInic": "Aquela força nos primeiros passos do seu negócio!",
+					"DescComp": "",
+					"Preco": "0",
+					"Lista": "<li>Controle de Vendas</li><li>1 Usuários</li><li>Cadastro de Produtos</li><li>Suporte por E-mail</li>"
+				},
+        		{
+					"Plano": "Plano Inicial",
+					"DesInic": "Recursos essenciais de gestão para lojas em crescimento.",
+					"DescComp": "",
+					"Preco": "59",
+					"Lista": "<li>+ Recursos do Plano Grátis</li><li>Controle de Caixa</li><li>Usuários Ilimitados</li><li>Etiquetas</li><li>Recibo Digital PDF</li><li>Pedido Online</li><li>Estatísticas</li><li>Múltiplos Endereços</li>"
+				},
+				{
+					"Plano": "Plano Avançado",
+					"DesInic": "Recursos avançados para expandir seu negócio.",
+					"DescComp": "",
+					"Preco": "89",
+					"Lista": "<li>+ Recursos dos Planos Grátis e inicial</li><li>Sistema de Fidelidade</li><li>Vendedores e Comissão</li><li>Estoque via XML</li><li>Uso em Rede</li><li>Controle de Pedidos</li>"
+				},
+				{
+					"Plano": "Plano Supremo",
+					"DesInic": "Descomplique a emissão de notas fiscais.",
+					"DescComp": "",
+					"Preco": "139",
+					"Lista": "<li>+ Recursos dos Planos Grátis, inicial e avançados</li><li>NF-e</li><li>NFC-e</li><li>SAT CF-e</li><li>Suporte Fiscal</li>"
+				}
+			]
+        }
+        storage.setItem("ListaProds",JSON.stringify(obj));
     }
 }
 

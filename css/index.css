@@ -1,39 +1,87 @@
 .conteudo {
-    max-width: 824px;
+    width: 98%;
 }
 
-.conteinerProds{
+.conteinerProds {
     width: 100%;
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .conteinerProds div {
     margin: 3px;
     width: 200px;
     height: 200px;
-    background-color: slategray;
+    background-color: #DFF1F5;
     border-radius: 25px;
     text-align: center;
+    position: relative;
     /* Adicionando uma sombra sólida e mais escura */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
+.conteinerProds h1 {
+    font-weight: bold;
+    font-size: larger;
+    color: #000080;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.conteinerProds p {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.conteinerProds button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 50px;
+    background-color: white;
+    border: unset;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.conteinerProds button:hover {
+    background-color: #E0E0E0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+	border: 2px solid #000080;
+}
+
+button:hover {
+    background-color: #E0E0E0; /* Altera a cor de fundo quando o mouse passa sobre o elemento */
+}
+
 @media (min-width: 800px) {
-    .conteinerProds{
-        width: 100%;
-        display: flex;
+    .conteinerProds {
         flex-wrap: wrap;
     }
+
     .conteinerProds div {
         margin: 3px;
-        width: 200px;
-        height: 200px;
-        background-color: slategray;
-        border-radius: 25px;
-        text-align: center;
-        /* Adicionando uma sombra sólida e mais escura */
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .conteudo {
+        width: 824px;
     }
 }

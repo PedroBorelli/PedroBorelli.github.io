@@ -15,10 +15,8 @@ window.addEventListener('load', (event) => {
         if(!ExisteStorage(session,"login")){
             session.setItem("login","off");
             session.setItem("IdCli","-1");
+            session.setItem("IdProd","0");
         }else if(!(session.getItem("login") == "off")){
-            blogin.classList.add("hide");
-            bcadastro.classList.add("hide");
-            user.classList.remove("hide");
             if(session.getItem("User") == "Adm"){
                 usuario = JSON.parse(storage.getItem("Adm"));
                 user.innerHTML = usuario.Nome;
@@ -29,6 +27,9 @@ window.addEventListener('load', (event) => {
                     user.innerHTML = usuario.Clientes[i].Nome;
                 }
             }
+            user.classList.remove("hide");
+            blogin.classList.add("hide");
+            bcadastro.classList.add("hide");
         }
     }
 })
@@ -37,7 +38,8 @@ function Sair(){
     let session = sessionStorage;
     session.setItem("login","off");
     session.setItem("IdCli","-1");
-    window.location.reload();
+    session.setItem("IdProd","0");
+    window.open("./index.html","_self");
 }
 
 user.addEventListener("click",Sair);

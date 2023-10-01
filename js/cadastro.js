@@ -22,9 +22,6 @@ function Vazio(){
 	return true;
 }
 
-const teste = setInterval(Vazio,500);
-
-
 if(VerificarStorage("localStorage")){
 	let storage = localStorage;
 	
@@ -42,13 +39,14 @@ if(VerificarStorage("localStorage")){
 			}
 		}
 
-		if((validarSenha(senha.value))&&(teste)){
+		if((validarSenha(senha.value))&&(Vazio())){
 			obj = {
 				"Nome": nome.value,
 				"Sobrenome": sobrenome.value,
 				"Endereco": endereco.value,
 				"Email": email.value,
-				"Senha": senha.value
+				"Senha": senha.value,
+				"Plano": "-1"
 			}
 			objtemp.Clientes.push(obj);
 			storage.setItem("ListaClientes",JSON.stringify(objtemp));

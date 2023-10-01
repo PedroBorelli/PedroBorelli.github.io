@@ -1,3 +1,8 @@
+font{
+	font-size: 27px;
+	font-weight: bolder;
+}
+
 .conteiner table{
 	width: 80%;
 	height: 80%;
@@ -18,11 +23,15 @@
 
 .compra{
 	height: 40px;
-	width: 150px;
-	background-color: #000080;
+	width: 100%;
+	background-color: #0000e6;
 	font-size: 24px;
 	font-weight: bold;
 	color: white;
-	display: flex;
-	align-items: center;
+	cursor: pointer;
+}
+
+.compra:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
 }

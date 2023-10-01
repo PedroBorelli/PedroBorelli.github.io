@@ -1,0 +1,107 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>UNI-GUARD</title>
+</head>
+<body>
+<!-- Desenho do cabeçalho-->
+    <header class="cabecalho">
+		<table>
+			<tr>
+				<td><a href="index.html" class="nome">UNI-GUARD</a></td>
+				<td align="right">
+					<a href="cadastro.html"><button class="bcastastro" id="bcadastro">Cadastro</button></a>
+					<button onclick="abrirPopup()" class="blogin" id="blogin">Login</button>
+				</td>
+				<td>
+					<div id="user" class="hide" onclick="Sair()"></div>
+				</td>
+			</tr>
+		</table>
+	</header>
+<!-- Div do PopUp de login-->
+    <div class="popup" id="popup">
+		<button onclick="fecharPopup()" id="bfechar">X</button>
+		<h2>Login</h2>
+		<form id="form">
+			<p id="erro"></p>
+			<label for="login">E-mail: </label><input type="email" name="login" id="email" autocomplete="username"><br><br>
+			<label for="senha">Senha: </label><input type="password" name="senha" id="senha" autocomplete="current-password"><br><br>
+			<button type="submit" id="bentrar">Logar</button><br><br>
+		</form>
+		<a href="cadastro.html" class="lconta">Ainda não possui uma conta?</a>
+	</div>
+<!-- Conteúdo -->
+    <main class="conteiner">
+        <div class="conteudo">
+            <h1 id="NomeProd">Nome do plano</h1>
+            <p id="DescInic">Descrição simples do plano</p>
+            <p id="DescComp">Descrição completa sobre tudo que o plano possa possivelmente oferecer, ou somente uma frase de efeito para o plano, o intuito é só encher espaço da tela criando algo mais bonito de se ver.</p>
+            <b>Valor do plano: R$<span id="Valor"></span>/mês</b>  <button id="adquirir" class="blogin">Adquirir</button><span id="adquirido"></span><br>
+            <ul id="Lista">
+            </ul>
+        </div>
+    </main>
+<!-- Rodapé -->
+<footer class="rodape">
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+				Codido ralizado por<br>
+				► Pedro Almeida - 2104398<br>
+				► Gabriel Albino - 2106550<br>
+				► Vinicius Soares - 2103902<br>
+				► Guilherme Santos - 2106081<br>
+			</td>
+			<td>
+				<center>
+					<img src="./Image/Mastercard.jpg" class="pagamento">
+					<img src="./Image/Visa.png" class="pagamento">
+					<img src="./Image/Elo.png" class="pagamento">
+					<img src="./Image/Paypal.png" class="pagamento">
+					<img src="./Image/PIX.png" class="pagamento">
+					<img src="./Image/codigo-de-barras.png" class="pagamento">
+				</center>
+			</td>
+			<td>
+				<center>
+					<img src="./Image/suporte-online.png">
+				</center>
+			</td>
+			<td>
+				SAC<br>
+				4038-0000<br>
+				(capitais e regiões metropolitanas)<br>
+				0800-037-5479<br>
+				(outros locais - apenas telefone fixo)
+			</td>
+			<td>
+				<center>
+					Redes Sociais:<br>
+					<a href="index.html"><img src="/Image/Facebook.png" class="redesocial"></a>
+					<a href="index.html"><img src="/Image/instagram.png" class="redesocial"></a>
+					<a href="index.html"><img src="/Image/linkedin.png" class="redesocial"></a>
+					<a href="index.html"><img src="/Image/twitter.png" class="redesocial"></a>
+				</center>
+			</td>
+			<td>
+				<center><a href="index.html"><img src="./Image/whatsapp.png"></a></center>
+			</td>
+		</tr>
+	</table>
+</footer>
+<!-- Script para validação da sessçao -->
+    <script type="module" src="./js/sessao.js"></script>
+    <script type="module" src="js/login.js"></script>
+<!-- Script para aparição do popup -->
+    <script src="js/popup.js"></script>
+
+    <script type="module" src="./js/produto.js"></script>
+</body>
+</html>

@@ -1,8 +1,17 @@
 import {VerificarStorage} from "./storage.js";
+import {CriarLocalStorage} from "./storage.js";
 
 const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const erro = document.getElementById("erro");
+
+window.addEventListener('load', (event) => {
+    if(VerificarStorage("localStorage")){
+        var storage = localStorage;
+
+        CriarLocalStorage(storage);
+    }
+})
 
 if(VerificarStorage("localStorage")){
     let storage = localStorage;
